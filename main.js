@@ -6,12 +6,19 @@
 
 $(document).ready(function() {
 
-    // per far visualizzare il dropdown menu al passaggio del mouse devo agganciarlo alla parola che si trova nel menu, che ha la classe dropdown
-    $('.dropdown').mouseenter(function() {
-        $('.dropdown-menu').addClass('active');
-    });
-    // per nascondere il dropdown menu dopo il passaggio del mouse devo agganciarlo sempre alla stessa parola
-    $('.dropdown').mouseleave(function() {
-        $('.dropdown-menu').removeClass('active');
+    // // per far visualizzare il dropdown menu al passaggio del mouse devo agganciarlo alla parola che si trova nel menu, che ha la classe dropdown
+    // $('.dropdown').mouseenter(function() {
+    //     $('.dropdown-menu').addClass('active');
+    // });
+    // // per nascondere il dropdown menu dopo il passaggio del mouse devo agganciarlo sempre alla stessa parola
+    // $('.dropdown').mouseleave(function() {
+    //     $('.dropdown-menu').removeClass('active');
+    // });
+    //
+    // // devo far abbassare menu a tendina uno per volta
+    // provo altra soluz con click
+    $('.menu').click(function() {
+
+        $('.dropdown-menu').toggleClass('active');
     });
 });
