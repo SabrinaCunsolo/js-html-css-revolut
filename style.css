@@ -6,5 +6,64 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #1F2223;
+    background-color: white;
+}
+
+header {
+    background-color: pink;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    background-color: orange;
+    height: 100%;
+    width: 300px;
+}
+
+.nav-right {
+    background-color: lightblue;
+    height: 100%;
+    width: 900px;
+}
+
+.nav-right ul {
+    list-style-type: none;
+}
+
+.nav-right ul li {
+    display: inline-block;
+}
+
+.nav-right ul li a {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu {
+
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    /* position: absolute; */
+    top: 50px;
+    right: 0;
+    width: 200px;
+    height: 250px;
+    background-color: green;
+    padding: 5px;
+    display: none;
+}
+
+.dropdown-menu.active {
+    display: block;
 }
